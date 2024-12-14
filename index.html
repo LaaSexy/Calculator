@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Iphone Calculator | Laa Sexy</title>
+    <link rel="icon" href="icon calculator.png">
+</head>
+<body>
+    <div class="oo">
+        <div class="calculator"  id="calculator">
+            <div class="main-button"> 
+                <div class="align">
+                </div>
+                <input type="text" id="display"  readonly    placeholder="0">
+                <input type="text" id="display2" placeholder="0" style="display:none">  
+                <div class="button">
+                    <input type="button" value="AC" id="operator-y" onclick="clearDisplay()" >
+                    <input type="button" value="C" id="operator-y" onclick="deletes()">
+                    <input type="button" value="%" id="operator-y" onclick="number('%') ; numbers('%')">
+                    <input type="button" value="÷" id="operator-x" class="btn-active" onclick="number('÷') ; numbers('/')">
+                </div>
+                <div class="button">
+                    <input type="button" value="7" id="operator" onclick="number('7') ; numbers('7')">
+                    <input type="button" value="8" id="operator" onclick="number('8') ; numbers('8')">
+                    <input type="button" value="9" id="operator" onclick="number('9') ; numbers('9')">
+                    <input type="button" value="×" id="operator-x" onclick="number('×') ; numbers('*')">
+                </div>
+                <div class="button">
+                    <input type="button" value="4" id="operator" onclick="number('4') ; numbers('4')">
+                    <input type="button" value="5" id="operator" onclick="number('5') ; numbers('5')">
+                    <input type="button" value="6" id="operator" onclick="number('6') ; numbers('6')">
+                    <input type="button" value="-" id="operator-x" onclick="number('-') ; numbers('-')">
+                </div>
+                <div class="button">
+                    <input type="button" value="1" id="operator" onclick="number('1') ; numbers('1')">
+                    <input type="button" value="2" id="operator" onclick="number('2') ; numbers('2')">
+                    <input type="button" value="3" id="operator" onclick="number('3') ; numbers('3')">
+                    <input type="button" value="+" id="operator-x" onclick="number('+') ; numbers('+')">
+                </div>
+                <div class="button">
+                    <input type="button" value="0" id="operators" onclick="number('0') ; numbers('0')">
+                    <input type="button" value="." id="operator" onclick="number('.') ; numbers('.')">
+                    <input type="button" value="=" id="operator-x" onclick="Calculator()">
+                </div>
+                <p class="swatch"></p>
+            </div>
+        </div>
+   </div>
+   <script src="main.js"></script>
+</body>
+</html>
